@@ -17,7 +17,7 @@ const personRoutes = require('./routes/personRoutes')
 app.use('/person', personRoutes)
 
 
-
+//This is for student file
 const route = require('./routes/studentsRoutes')
 app.use('/students', route)
 
