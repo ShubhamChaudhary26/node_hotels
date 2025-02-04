@@ -51,32 +51,6 @@ Roters.get('/:workType', async (req, res) => {
 
 })
 
-// Roters.put('/:id', async (req, res) => {
-
-//     try {
-//         const GetId = req.params.id // Extract The id From the URL
-//         const DataWhichWantToUpdate = req.body  // Update data for Person
-
-//         const response = await Person.findByIdAndUpdate(GetId, DataWhichWantToUpdate, {
-//             new: true, // Return Updated Data 
-//             runValidators: true // run mongoose Validator
-//         })
-
-//         if (!response) {
-//             res.status(404).json({ error: 'person not found' })
-//         }
-
-//         res.status(200).json(response)
-
-
-//     } catch (error) {
-//         console.log(error);
-//         res.status(500).json({ error: 'internal error' })
-
-//     }
-
-// })
-
 
 Roters.put('/:id', async (req, res) => {
     try {
