@@ -32,7 +32,7 @@ app.get('/', (req, res, next) => {
 
 // this is for person file
 const personRoutes = require('./routes/personRoutes')
-app.use('/person',LocalAuthMiddleware, personRoutes)
+app.use('/person', personRoutes)
 
 
 //This is for student file
